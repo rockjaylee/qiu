@@ -1,0 +1,27 @@
+<view class="container">
+  <!-- navbar -->
+  <van-nav-bar fixed placeholder border="{{false}}" bind:click-left="onClickAvatar">
+  </van-nav-bar>
+
+  <view class="intro">
+    <!-- intro slogan -->
+    <view class="intro-slogan">
+      <text>加入或创建房间</text>
+    </view>
+
+    <!-- intro illustration -->
+    <view class="intro-img">
+      <image src="../../images/illustrations/trick-or-treat.png" mode="aspectFill" />
+    </view>
+
+    <!-- intro buttons-->
+    <view class="intro-btn" id="createRoomBtn">
+      <text>创建房间</text>
+    </view>
+    <view class="intro-btn" id="joinRoomBtn">
+      <text>扫码进房</text>
+    </view>
+
+  </view>
+
+</view>

@@ -1,0 +1,52 @@
+<view class="container">
+  <!-- navbar -->
+  <van-nav-bar fixed placeholder border="{{false}}">
+  </van-nav-bar>
+
+  <view class="user">
+
+    <!-- userProfile -->
+    <view class="user-profile" bind:tap="getUserProfile">
+
+      <view class="name">
+        <text class="nickname">{{ userProfile===null ? "未登录" : userProfile.nickName}}</text>
+        <text class="changeInfo">{{ userProfile===null? "点击以获取个人信息" : "更换个人信息" }}</text>
+      </view>
+
+      <image wx:if="{{userProfile===null}}" class="avatar " src="../../images/avatar_default.svg" mode="aspectFit"></image>
+      <image wx:else class="avatar " src="{{userProfile.avatarUrl}}" mode="aspectFit"></image>
+
+    </view>
+
+    <!-- career overview-->
+    <van-cell-group custom-class="user-cellgroup" inset border="{{false}}">
+      <van-cell custom-class="cell-colored" title="统计" size="large" border="{{false}}">
+          <text class="win">{{win}}W </text>
+          <text class="lose">{{lose}}L </text>
+          <text class="tie">{{tie}}T</text>
+      </van-cell>
+      <van-cell custom-class="cell-colored" size="large" title="胜率" value="0" border="{{false}}" />
+      <van-cell custom-class="cell-colored" size="large" title="盈亏" value="0" border="{{false}}" />
+    </van-cell-group>
+
+    <van-cell-group custom-class="user-cellgroup" inset border="{{false}}">
+      <van-cell size="large" border="{{false}}" title="历史战绩" is-link clickable bind:click="gotoCareer" ></van-cell>
+      <van-cell size="large" border="{{false}}" title="好友排行榜" is-link></van-cell>
+    </van-cell-group>
+
+    <!-- share -->
+    <van-cell-group custom-class="user-cellgroup" inset border="{{false}}">
+      <van-cell custom-class="cell-share" size="large" border="{{false}}" title="分享我的战绩">
+        <van-icon slot="right-icon" name="share"></van-icon>
+      </van-cell>
+    </van-cell-group>
+
+    <!-- settings -->
+    <van-cell-group custom-class="user-cellgroup" inset border="{{false}}">
+      <van-cell size="large" title="浅色模式" border="{{false}}">
+        <van-switch slot="right-icon" size="32rpx" checked="{{false}}" active-color="#1b9e63" inactive-color="#2f3136"></van-switch>
+      </van-cell>
+    </van-cell-group>
+
+  </view>
+</view>

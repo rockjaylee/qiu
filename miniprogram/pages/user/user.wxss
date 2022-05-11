@@ -1,0 +1,82 @@
+.user {
+  padding: 0 24rpx;
+  color: #fff;
+}
+
+.user-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18rpx;
+  height: 136rpx;
+}
+
+.name {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.nickname {
+  font-size: 48rpx;
+  font-weight: 700;
+}
+
+.changeInfo {
+  font-size: 24rpx;
+  color: #1b9e63;
+}
+
+.avatar {
+  width: 88rpx;
+  height: 88rpx;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+/* cell style  */
+.user-cellgroup {
+  margin: 0 !important;
+  margin-top: 25rpx !important;
+}
+
+.van-cell {
+  background-color: #42464d !important;
+  color: #fff !important;
+}
+
+.van-cell__title {
+  font-size: 32rpx !important;
+}
+
+.van-cell__value {
+  color: #fff !important;
+}
+
+
+/* .cell-colored {
+  
+  background: -webkit-linear-gradient(30deg, #1b9e63 30%, #3e56cf) !important;
+
+}
+
+.cell-share {
+  background: -webkit-linear-gradient(315deg, #1b9e63 25%, #647eff) !important;
+} */
+
+.van-icon-arrow {
+  color: #fff;
+}
+
+.van-switch {
+  transform: translateY(12%);
+}
+
+.win {
+  color: #f94f46;
+}
+.lose {
+  color: #1b9e63;
+}
+.tie {
+  color: #647eff;
+}

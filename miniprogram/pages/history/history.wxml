@@ -1,0 +1,30 @@
+<view class="container">
+  <!-- custome nav-bar -->
+  <van-nav-bar fixed placeholder border="{{false}}"></van-nav-bar>
+  <!-- history-title -->
+  <view class="title">
+    <text>历史战绩</text>
+  </view>
+  <!-- placeholder for empty history -->
+  <view class="placeholder" wx:if="{{careerRecord.length===0}}">
+    <image src="../../images/illustrations/empty-pockets.png" mode="aspectFit"></image>
+    <text>暂无</text>
+  </view>
+  <!-- history cell-list -->
+  <view class="history" wx:else>
+    <van-swipe-cell wx:for="{{careerRecord}}" wx:key="roomNumber" right-width="{{ 65 }}">
+      <van-cell-group inset custom-class="history-cellgroup" border="{{false}}">
+        <!-- 第一列展示房号与输赢 -->
+        <van-cell size="large" border="{{false}}" title="#{{item.roomNumber}}" label="{{item.time}}">
+          <van-tag size="medium" type="{{item.result==='win'?'success':(item.result==='lose'?'danger':'primary')}}">
+            {{item.result==='win'?'赢':(item.result==='lose'?'输':'不管事')}}
+          </van-tag>
+          <text>￥{{item.money}}</text>
+        </van-cell>
+        <!-- 第二列展示同玩好友 -->
+        <van-cell custom-class="friends-cell" border="{{false}}" value="{{item.friends}}" is-link></van-cell>
+      </van-cell-group>
+      <view slot="right">删除</view>
+    </van-swipe-cell>
+  </view>
+</view>

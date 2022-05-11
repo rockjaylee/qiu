@@ -1,0 +1,75 @@
+/* pages/history/history.wxss */
+
+.van-nav-bar__text {
+	color: #1b9e63 !important;
+}
+
+.title {
+	margin-top: 20rpx;
+	padding: 0 35rpx;
+	color: #fff;
+	font-size: 52rpx;
+	font-weight: 700;
+}
+
+.placeholder {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.placeholder image {
+	margin: 120rpx 0;
+	width: 100%;
+}
+
+.history {
+	margin-top: 20rpx;
+	color: #fff;
+	text-align: center;
+}
+
+.history-cellgroup {
+	margin: 20rpx 20rpx 0 !important;
+}
+
+.van-cell {
+	color: #fff !important;
+	background-color: #42464d !important;
+}
+
+.van-cell__title {
+	text-align: left;
+}
+
+.van-cell__value {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.van-collapse-item__content {
+	padding: 0 !important;
+}
+
+.van-tag {
+	transform: translateY(-10%) !important;
+}
+
+.van-tag--success {
+	background-color: #f94f46 !important;
+}
+
+.van-tag--danger {
+	background-color: #1b9e63 !important;
+}
+
+.van-tag--primary {
+	background-color: #647eff !important;
+}
+
+.friends-cell .van-cell__value {
+  justify-content: flex-start !important;
+}

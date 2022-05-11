@@ -1,0 +1,39 @@
+page {
+  background-color: #2f3136;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica,
+    Segoe UI, Arial, Roboto, 'PingFang SC', 'miui', 'Hiragino Sans GB', 'Microsoft Yahei',
+    sans-serif;
+}
+
+.van-nav-bar {
+  background-color: #2f3136 !important;
+}
+
+.van-nav-bar__title{
+  color:#fff !important;
+}
+
+.van-nav-bar__text{
+  color:#fff !important;
+}
+
+
+
+/* style for dark mode */
+/* @media (prefers-color-scheme: dark){
+  page {
+    background-color: #212121;
+  }
+
+  .van-nav-bar {
+    background-color: #212121 !important;
+  }
+
+  .van-nav-bar__title{
+    color:#f6f6f6 !important;
+  }
+
+  .van-nav-bar__text{
+    color:#f6f6f6 !important;
+  }
+} */

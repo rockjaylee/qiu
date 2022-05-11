@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Tencent\weDev\cli.bat" cloud functions deploy --e quanqiuren-6gue4sn6bd1b994e --n quickstartFunctions --r --project "C:\Users\lqf\Documents\1qf_frontend\MiniProgram\qiu" --report_first --report
